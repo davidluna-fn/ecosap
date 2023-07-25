@@ -78,4 +78,4 @@ EcoSAP is released under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## About the Author
 
-EcoSAP is proudly developed and maintained by David Luna. Connect with me on [LinkedIn](https://www.linkedin.com/in/davidlunafn/), [Twitter](https://twitter.com/davidluna.fn), and via email at davidluna.fn@gmail.com.
+EcoSAP is proudly developed and maintained by David Luna. Connect with me on [LinkedIn](https://www.linkedin.com/in/davidlunafn/), [Twitter](https://twitter.com/davidlunafn), and via email at davidluna.fn@gmail.com.
