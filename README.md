@@ -17,9 +17,14 @@ The `RainDetect` module is an automatic rain detector tailored for ecoacoustic r
 
 The `EcoProc` module is the heart of EcoSAP, providing a comprehensive suite of eco-focused algorithms for sound preprocessing and feature extraction. It optimizes the acoustic data, removing noise, filtering frequencies, and extracting essential features for subsequent analysis.
 
-### 4. EcoFeat
+### 4. EcoFeatures
 
-The `EcoFeat` module enables extraction of various ecoacoustic features from the data. It includes functions to detect species vocalizations, measure biodiversity indices, and assess soundscape complexity.
+The `EcoFeatures` module enables extraction of various ecoacoustic features from the data. It includes functions to detect species vocalizations, measure biodiversity indices, and assess soundscape complexity.
+
+### 5. EcoUtils
+
+The `EcoUtils` module provides convenient functions for file manipulation and basic utilities. It allows users to load, save, and handle ecoacoustic data files effortlessly. This module also includes common utility functions for data transformation and general ecoacoustic data management.
+
 
 
 ## Installation
@@ -39,7 +44,7 @@ pip install ecosap
 import ecosap.ecovis as ecovis
 import ecosap.raindetect as raindetect
 import ecosap.ecoproc as ecoproc
-import ecosap.ecochar as ecofeat
+import ecosap.ecochar as ecofeatures
 
 # Load your ecoacoustic data
 data = load_ecoacoustic_data()
