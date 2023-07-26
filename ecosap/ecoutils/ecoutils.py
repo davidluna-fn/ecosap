@@ -1,6 +1,6 @@
 import re
 
-import datetime
+from datetime import datetime as dt
 import pandas as pd
 from pathlib import Path
 
@@ -19,11 +19,12 @@ def extract_datetime_from_filename(filename: str):
     datetime_str = re.search(r'\d{8}_\d{6}', filename)
     if datetime_str:
         datetime_str = datetime_str.group()
-        date_obj = datetime.strptime(datetime_str[:8], '%Y%m%d')
-        time_obj = datetime.strptime(datetime_str[9:], '%H%M%S')
+        date_obj = dt.strptime(datetime_str[:8], '%Y%m%d')
+        time_obj = dt.strptime(datetime_str[9:], '%H%M%S').time()
         return date_obj, time_obj
     else:
         return None, None
+
 
 def list_audio_files(path: str) -> pd.DataFrame:
     """List all audio files (wav) in a directory and its subdirectories.
