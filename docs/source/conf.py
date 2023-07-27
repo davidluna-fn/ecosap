@@ -5,9 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-import sys
-import os
 
+import os
+import sys
 sys.path.insert(0, os.path.abspath('../'))
 sys.path.insert(1, os.path.abspath('../../'))
 
@@ -20,12 +20,20 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.duration',
-    'sphinx.ext.doctest',
-    'sphinx.ext.autodoc',
-    'sphinx.ext.autosummary',
-
+    'sphinx.ext.autodoc',  # Core Sphinx library for auto html doc generation from docstrings
+    'sphinx.ext.autosummary',  # Create neat summary tables for modules/classes/methods etc
+    # Link to other project's documentation (see mapping below)
+    'sphinx.ext.intersphinx',
+    # Add a link to the Python source code for classes, functions etc.
+    'sphinx.ext.viewcode',
+    # Automatically document param types (less noise in class signature)
+    'sphinx_autodoc_typehints',
+    'sphinx.ext.githubpages',
+    #    'sphinx.ext.napoleon',
+    'sphinx.ext.autosectionlabel',
 ]
+
+autosummary_generate = True
 
 templates_path = ['_templates']
 exclude_patterns = []

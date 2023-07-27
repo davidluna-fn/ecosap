@@ -1,5 +1,5 @@
 .. EcoSAP documentation master file, created by
-   sphinx-quickstart on Wed Jul 26 22:31:04 2023.
+   sphinx-quickstart on Thu Jul 27 12:48:59 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
@@ -12,9 +12,6 @@ Welcome to EcoSAP's documentation!
    :caption: Contents:
 
    ecosap
-
-.. autosummary::
-   :toctree: generated
 
 
 
