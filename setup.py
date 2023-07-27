@@ -25,7 +25,8 @@ INSTALL_REQUIRES = [
     'soundfile',
     'matplotlib',
     'pandas',
-    'datetime'
+    'datetime',
+    'scipy'
 ]
 
 setup(

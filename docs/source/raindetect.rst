@@ -1,0 +1,4 @@
+RainDetect
+==================================
+
+.. automodule:: ecosap.raindetect
