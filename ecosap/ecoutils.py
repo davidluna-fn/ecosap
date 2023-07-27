@@ -10,11 +10,15 @@ def extract_datetime_from_filename(filename: str):
 
     The filename should have the format 'YYYYMMDD_HHMMSS' somewhere in its name.
 
-    Args:
-        filename (str): The filename to extract the date and time from.
+    Parameters
+    ----------
+    filename : str
+        The filename to extract the date and time from.
 
-    Returns:
-        tuple: A tuple containing the date and time as datetime objects.
+    Returns
+    -------
+    tuple(datetime.datetime, datetime.datetime)
+        A tuple containing the date and time as datetime objects.
     """
     datetime_str = re.search(r'\d{8}_\d{6}', filename)
     if datetime_str:
@@ -29,20 +33,23 @@ def extract_datetime_from_filename(filename: str):
 def list_audio_files(path: str) -> pd.DataFrame:
     """List all audio files (wav) in a directory and its subdirectories.
 
-    The files should be wav format and the filename should have the format 'YYYYMMDD_HHMMSS' somewhere in its name.
+    The files should be in wav format, and the filename should have the format 'YYYYMMDD_HHMMSS'
+    somewhere in its name.
 
+    Parameters
+    ----------
+    path : str
+        The path to the directory containing audio files.
 
-    Args:
-        path (str): The path to the directory containing audio files.
-
-    Returns:
-        pd.DataFrame: A DataFrame with the following columns:
-            - 'Name': Name of each audio file.
-            - 'Folder': Name of the parent folder for each audio file.
-            - 'Date': Date extracted from the filename in format (YYYY-MM-DD).
-            - 'Time': Time extracted from the filename in format (HH:MM:SS).
-            - 'Path': Full path of each audio file.
-
+    Returns
+    -------
+    pd.DataFrame
+        A DataFrame with the following columns:
+            * 'Name': Name of each audio file.
+            * 'Folder': Name of the parent folder for each audio file.
+            * 'Date': Date extracted from the filename in format (YYYY-MM-DD).
+            * 'Time': Time extracted from the filename in format (HH:MM:SS).
+            * 'Path': Full path of each audio file.
     """
     audio_data = []
 
