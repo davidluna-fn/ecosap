@@ -1,3 +1,0 @@
-EcoProc
-==================================
-.. automodule:: ecosap.ecoproc

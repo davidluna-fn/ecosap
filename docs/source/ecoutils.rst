@@ -1,4 +1,0 @@
-EcoUtils
-==================================
-
-.. automodule:: ecoutils

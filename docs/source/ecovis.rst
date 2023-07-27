@@ -1,4 +1,0 @@
-EcoVis
-==================================
-
-.. automodule:: ecosap.ecovis

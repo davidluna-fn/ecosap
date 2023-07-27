@@ -1,5 +1,0 @@
-EcoFeatures
-==================================
-
-.. automodule:: ecosap.ecofeatures
-
