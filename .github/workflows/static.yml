@@ -41,7 +41,7 @@ jobs:
         with:
           # Upload entire repository
           #publish_dir: './docs/build/html/'
-          path: './docs/build/'
+          path: './docs/build/html'
       - name: Deploy Docs
         id: deployment
         uses: actions/deploy-pages@v2
