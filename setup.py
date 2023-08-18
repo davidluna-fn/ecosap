@@ -26,7 +26,8 @@ INSTALL_REQUIRES = [
     'matplotlib',
     'pandas',
     'datetime',
-    'scipy'
+    'scipy',
+    'openpyxl'
 ]
 
 setup(
