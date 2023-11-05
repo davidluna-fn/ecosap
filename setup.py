@@ -27,7 +27,11 @@ INSTALL_REQUIRES = [
     'pandas',
     'datetime',
     'scipy',
-    'openpyxl'
+    'openpyxl',
+    'scikit-learn',
+    'tqdm',
+    'torch',
+    'torchaudio',
 ]
 
 setup(
